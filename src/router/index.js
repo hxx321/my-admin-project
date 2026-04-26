@@ -6,6 +6,7 @@ import Home from "@/views/Home.vue";
 import User from "@/views/User.vue";
 import Mail from "@/views/Mail.vue";
 import Login from "@/views/Login.vue";
+import Error from "@/views/404.vue";
 //2.创建路由器
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: Login,
+  },
+  {
+    path: "/404",
+    name: "404",
+    component: Error,
   },
 ];
 
